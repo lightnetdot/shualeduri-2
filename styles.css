@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: #4f7d7d;
+  font-family: Barlow, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.625;
+}
+
+h1,
+h2,
+h3 {
+  color: #162542;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: clamp(3rem, 1vw + 2.8rem, 3.5rem);
+  line-height: 1;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.125;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.167;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 24px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1170px) {
+  .container {
+    padding: 0 24px;
+  }
+  .container::before, .container::after {
+    background: #e8eff2;
+    border-radius: 20px;
+    content: "";
+    display: block;
+    width: 255px;
+    height: 236px;
+    position: absolute;
+  }
+  .container::before {
+    left: -255px;
+    top: 951px;
+  }
+  .container::after {
+    right: -255px;
+    top: 197px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  padding-top: 24px;
+}
+@media (min-width: 1170px) {
+  nav {
+    margin-bottom: 84px;
+    padding-top: 56px;
+  }
+}
+
+.Box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 64px;
+}
+.Boxcontent, .Keyboard-img {
+  margin: 0 auto;
+}
+.Boxcontent {
+  min-width: 339px;
+  max-width: 339px;
+}
+.BoxGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.BoxGroup a {
+  margin-right: 32px;
+}
+.BoxGroup span {
+  flex: 1;
+}
+.Keyboard-img {
+  background: url("images/Group\ 3.png") center center/cover no-repeat;
+  width: 540px;
+  height: 480px;
+}
+@media (min-width: 768px) {
+  .Box {
+    flex-direction: row;
+    align-items: center;
+  }
+  .Box > * {
+    margin: 0;
+  }
+  .Keyboard-img {
+    background-image: url("images/Group\ 3.png");
+    min-width: 478px;
+    height: 425px;
+  }
+}
+@media (min-width: 985px) {
+  .Boxcontent {
+    max-width: 445px;
+  }
+  .Keyboard-img {
+    background-image: url("images/Group\ 3.png");
+    width: 540px;
+    height: 480px;
+  }
+}
+
+
+.Main {
+  margin: 24px auto 118px;
+  max-width: 374px;
+}
+.Main-images {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto 72px;
+  gap: 24px;
+}
+.Main-images > div:first-of-type {
+  background: url("images/Group_3_Copy_2.png") center center/cover no-repeat;
+  background-blend-mode: multiply;
+  min-width: 129px;
+  height: 193px;
+  position: relative;
+}
+.Main-images > div:last-of-type {
+  background: url("images/Group_3_Copy_2.png") center center/cover no-repeat;
+  min-width: 220px;
+  height: 193px;
+}
+.Main-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 398px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .Main {
+    max-width: 689px;
+  }
+  .Main-images {
+    justify-content: center;
+    gap: 30px;
+  }
+  .Main-images > div:first-of-type {
+    background-image: url("images/Group_3_Copy_2.png");
+    min-width: 214px;
+    height: 320px;
+  }
+  .Main-images > div:last-of-type {
+    background-image: url("images/Group_3_Copy_2.png");
+    width: 445px;
+    height: 320px;
+  }
+  .Main-details {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
+    text-align: left;
+  }
+  .Main-details p {
+    max-width: 398px;
+  }
+}
+@media (min-width: 1170px) {
+  .Main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 126px;
+    max-width: none;
+  }
+  .Main-images > div:first-of-type {
+    background-image: url("images/Group_3_Copy_2.png");
+    width: 255px;
+    height: 480px;
+  }
+  .Main-images > div:last-of-type {
+    background-image: url("images/Group\ 3\ Copy.png");
+    width: 445px;
+    height: 480px;
+  }
+  .Main-details {
+    flex-direction: column;
+  }
+}
+
+.FeatureSection {
+  display: flex;
+  justify-content: center;
+}
+.FeatureSection > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px 64px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 688px;
+}
+@media (min-width: 768px) {
+  .FeatureSection > ul {
+    align-items: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 80px;
+  }
+}
+@media (min-width: 1170px) {
+  .FeatureSection > ul {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    width: 100%;
+  }
+}
+
+.Feature {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  text-align: center;
+  max-width: 374px;
+}
+.Featureimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f16718;
+  border-radius: 16px;
+  width: 65px;
+  height: 65px;
+}
+.Featureimage img {
+  max-width: 65px;
+  max-height: 65px;
+}
+.Featuredetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Featuredetails h3 {
+  width: 196px;
+}
+@media (min-width: 768px) {
+  .Feature {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 281px;
+  }
+  .Featuredetails {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1170px) {
+  .Feature {
+    max-width: 255px;
+  }
+}
+
+footer {
+  margin-top: 104px;
+  padding: 0 0 46px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer {
+    margin-top: 148px;
+  }
+}
+@media (min-width: 1170px) {
+  footer {
+    margin-top: 135px;
+  }
+}
+
+.BigImg {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 58px;
+  width: 175px;
+  padding: 0 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s background, 0.5s color;
+}
+.Button:hover {
+  cursor: pointer;
+}
+.Button--primary {
+  background: #f16718;
+  color: white;
+}
+.Button--primary:hover, .Button--primary:focus {
+  background: #ff9b62;
+}
+.Button--secondary {
+  background: #e8eff2;
+  color: #162542;
+}
+.Button--secondary:hover, .Button--secondary:focus {
+  color: white;
+  background: #162542;
+}
