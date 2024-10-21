@@ -167,7 +167,7 @@ nav {
   position: relative;
 }
 .Main-images > div:last-of-type {
-  background: url("images/Group_3_Copy_2.png") center center/cover no-repeat;
+  background: url("images/Group\ 3\ Copy.png") center center/cover no-repeat;
   min-width: 220px;
   height: 193px;
 }
@@ -192,7 +192,7 @@ nav {
     height: 320px;
   }
   .Main-images > div:last-of-type {
-    background-image: url("images/Group_3_Copy_2.png");
+    background-image: url("images/Group\ 3\ Copy.png");
     width: 445px;
     height: 320px;
   }
